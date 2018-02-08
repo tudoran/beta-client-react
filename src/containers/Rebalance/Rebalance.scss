@@ -1,0 +1,121 @@
+@import '../styles/variables/colors';
+@import '../styles/variables/dimensions';
+@import '../styles/mixins';
+
+.rebalancing {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  padding: 16px;
+  border: 1px solid $border-color;
+  @include border-radius(3px);
+}
+
+.titleWrapper {
+  margin-bottom: 10px;
+}
+
+.title {
+  float: left;
+  font-weight: 500;
+}
+
+.status {
+  float: right;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: $primary-color;
+  padding-top: 2px;
+  @media (min-width: $sm-width) and (max-width: $md-width) {
+    text-align: left;
+  }
+}
+
+.text {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.driftWrapper {
+  font-size: 11px;
+  margin: 10px 0;
+}
+
+.driftLabel {
+  float: left;
+  text-transform: uppercase;
+}
+
+.driftState {
+  margin-left: 10px;
+  display: inline-block;
+  padding-top: 2px;
+  float: right;
+  text-transform: uppercase;
+}
+
+.barRegion {
+  display: table;
+  width: 100%;
+}
+
+.barLabel {
+  float: left;
+  width: 40px;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.driftBarWrapper {
+  background: $bg-color3;
+  height: 10px;
+  position: relative;
+  margin: 2px 0 0 40px;
+}
+
+.driftBar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 10px;
+  background: green;
+}
+
+.tooltip {
+  color: $text-light-color;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+:global {
+  .inline-select-small {
+    display: inline-block;
+    min-width: 50px;
+    vertical-align: middle;
+    @import '../../styles/variables/colors';
+    @import '../../styles/variables/dimensions';
+    @import '../../styles/mixins';
+    @import '../../../node_modules/react-select-plus/scss/select';
+
+    // Customizations
+    $select-input-height: 20px;
+    $select-input-internal-height: ($select-input-height - ($select-input-border-width * 2));
+    $select-padding-horizontal: 3px;
+    $select-padding-vertical: 3px;
+    $select-item-font-size: 14px;
+    $select-arrow-width: 3px;
+    $select-input-border-focus: $primary-color;
+    $select-arrow-color: $text-color;
+    $select-arrow-color-hover: $primary-color;
+    $select-input-placeholder: $text-color;
+    $select-option-focused-bg: $primary-color;
+    $select-option-focused-color: white;
+
+    @import '../../../node_modules/react-select-plus/scss/control';
+    @import '../../../node_modules/react-select-plus/scss/menu';
+    @import '../../../node_modules/react-select-plus/scss/mixins';
+    @import '../../../node_modules/react-select-plus/scss/multi';
+    @import '../../../node_modules/react-select-plus/scss/spinner';
+  }
+}

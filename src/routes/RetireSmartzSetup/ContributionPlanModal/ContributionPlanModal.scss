@@ -1,0 +1,31 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+.contributionPlanModal {
+  @media (min-width: $sm-width) {
+    width: 700px;
+  }
+}
+.modalBody {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.modalCol {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @media (min-width: $sm-width) {
+    &:not(:last-child) {
+      border-right: 1px solid $border-color;
+    }
+  }
+}
+.description {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  color: $primary-color;
+}
+.label {
+  color: $text-dark-color;
+}

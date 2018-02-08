@@ -1,0 +1,24 @@
+
+.nvtooltip {
+  border: none !important;
+  padding: 10px !important;
+  box-shadow: 0 0 10px $shadow-color;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,.95) !important;
+  transition: opacity .2s;
+}
+
+.nvtooltip .projection-tooltip {
+  font-size: 12px;
+  width: 260px;
+  color: $primary-darken-color;
+  h3 {
+    color: $primary-darken-color;
+    text-align: left;
+    background: none;
+    font-size: 15px;
+    margin: 7px 0 3px;
+    padding: 0;
+    border: none;
+  }
+}

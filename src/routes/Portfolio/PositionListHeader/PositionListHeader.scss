@@ -1,0 +1,44 @@
+@import '../styles/variables/colors';
+
+.text {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: $text-dark-color;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.positionListHeader {
+  border-bottom: 1px solid $table-border-color;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin: 0 0 8px 0;
+}
+
+.holding {
+  @extend .text;
+}
+
+.weight {
+  @extend .text;
+}
+
+.value {
+  @extend .text;
+}
+
+.valueContent {
+  float: right;
+}
+
+.tooltip {
+  color: $text-light-color;
+  margin-left: 10px;
+  cursor: pointer;
+}

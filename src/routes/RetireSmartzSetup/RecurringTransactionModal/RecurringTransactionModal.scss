@@ -1,0 +1,19 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+.recurringTransactionModal {
+  @media (min-width: $sm-width) {
+  	width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.description {
+  font-size: 13px;
+  font-weight: 400;
+  color: $primary-color;
+}
+.label {
+  color: $text-dark-color;
+}

@@ -1,0 +1,65 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+
+.allocation {
+	margin-bottom: 15px;
+	display: table;
+	width: 100%;
+	text-align: center;
+	@media (max-width: $md-width - 1) {
+		position: relative;
+		display: block;
+		padding-bottom: 60px;
+	}
+}
+
+.bonds, .stocks {
+	font-size: 12px;
+	text-transform: uppercase;
+	vertical-align: bottom;
+	padding-bottom: 10px;
+	display: table-cell;
+	@media (max-width: $md-width - 1) {
+		display: block;
+		position: absolute;
+		bottom: 10px;
+		padding-bottom: 0;
+	}
+}
+
+.bonds {
+	text-align: left;
+	color: #003100;
+	padding-right: 20px;
+	@media (max-width: $md-width - 1) {
+		left: 0;
+	}
+}
+
+.stocks {
+	text-align: right;
+	color: #035d0e;
+	padding-left: 20px;
+	@media (max-width: $md-width - 1) {
+		right: 0;
+	}
+}
+
+.gauge {
+	text-align: center;
+	vertical-align: bottom;
+	display: table-cell;
+	@media (max-width: $md-width - 1) {
+		display: inline-block;
+	}
+}
+
+.label {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+.percentage {
+	font-size: 16px;
+	display: block;
+}

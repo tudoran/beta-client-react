@@ -1,0 +1,53 @@
+@import '../styles/variables/fonts';
+@import '../styles/variables/colors';
+
+.position-list-item-description {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 13px;
+  margin-bottom: 0;
+  padding-top: 10px;
+
+  &:hover {
+    .chevron-right {
+      display: inline-block !important;
+    }
+  }
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  :global .panel-body {
+    padding-top: 0;
+  }
+}
+
+.header {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+
+  &:hover {
+    color: $primary-color;
+    text-decoration: underline;
+  }
+}
+
+.position-list-item-description--opened {
+  :global .header {
+    font-weight: $hover-font-weight;
+  }
+}
+
+.chevron-down {
+  display: none;
+  margin-right: 7px;
+}
+
+.chevron-right {
+  display: none !important;
+  margin-right: 7px;
+}

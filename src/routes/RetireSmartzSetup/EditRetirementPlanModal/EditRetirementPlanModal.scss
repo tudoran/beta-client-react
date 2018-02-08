@@ -1,0 +1,57 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+.description {
+  font-size: 13px;
+  font-weight: 400;
+  color: $primary-color;
+}
+.label {
+  color: $text-dark-color;
+}
+.editRetirementPlanModal {
+  @media (min-width: $sm-width) {
+    width: 700px;
+  }
+}
+.mbSpacer10 {
+  margin-bottom: 10px;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+.mbSpacer15 {
+  margin-bottom: 15px;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+.smallLabel {
+  font-size: 15px !important;
+  color: $text-color;
+}
+.halfWidthControl {
+  width: 50%;
+  display: inline-block;
+}
+.avatarImg {
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.textRight {
+  text-align: right !important;
+}
+.configIcon {
+  cursor: pointer;
+  position: absolute;
+  top: 1px;
+  right: 7px;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+}

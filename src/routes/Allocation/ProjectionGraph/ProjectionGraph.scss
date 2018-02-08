@@ -1,0 +1,186 @@
+@import '../../../styles/variables/colors';
+
+.projectionGraph {
+  position: relative;
+}
+
+.performanceValues {
+  padding: 0 15px 0 0;
+  list-style: none;
+  li {
+    list-style: none;
+    padding-left: 0;
+    float: left;
+    text-transform: uppercase;
+    margin-right: 30px;
+    color: $text-dark-color;
+  }
+  h5 {
+    font-size: 12px;
+    letter-spacing: .5px;
+    margin-bottom: 0;
+  }
+}
+
+.performanceValue {
+  padding: 7px 0 0;
+  color: $text-dark-color;
+  font-weight: lighter;
+  font-size: 25px;
+  letter-spacing: -.3px;
+  line-height: 1;
+}
+
+.graphWrapper {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.graph {
+  :global .nvd3 .nv-axis.nv-x .tick line,
+  :global .nvd3 .nv-axis.nv-y .tick line,
+  :global .nvd3 .nv-axis.nv-x path.domain {
+    stroke-width: 1px;
+    stroke: #e6e6e6;
+    stroke-opacity: 1;
+  }
+
+  :global .nvd3 .nv-axis.nv-y2 path.domain {
+    stroke-opacity: 0;
+  }
+
+  :global .nvd3 circle {
+    fill: #fff;
+    stroke-width: 2px;
+  }
+
+  :global .nvd3 text {
+    fill: $text-color;
+  }
+
+  :global .nvd3 .nv-axis.nv-x {
+    .tick text, .nv-axisMaxMin text {
+      transform: translate(0, 10px);
+    }
+  }
+
+  :global .nvd3 .nv-axisMin-x text {
+    text-anchor: start !important;
+  }
+
+  :global .nvd3.nv-stackedarea path.nv-area.hover {
+    fill-opacity: 0.7;
+  }
+
+  :global .nvd3.nv-scatter .nv-groups .nv-point.hover {
+    stroke-width: 0 !important;
+    fill-opacity: 0 !important;
+  }
+
+  :global .nvd3 line.nv-guideline {
+    stroke: #333;
+    stroke-width: 2px;
+  }
+
+  :global .nvd3 .mouseover-point {
+    fill: #fff;
+    stroke: #000;
+  }
+}
+
+.isDatumEmpty {
+  :global {
+    .stack2Wrap, .lines2Wrap, .nv-interactive {
+      display: none;
+    }
+  }
+}
+
+// ------------------------------------
+// Lines styling
+// ------------------------------------
+
+.currentBalance {
+  stroke-dasharray: 9,9;
+}
+
+.target {
+  stroke-width: 1px !important;
+  stroke: #E05923 !important;
+}
+
+.targetGreen {
+  stroke: #035d0e !important;
+}
+
+.line975 {
+  stroke-width: 2px !important;
+}
+
+.line500 {
+  stroke-width: 3px !important;
+}
+
+.line250 {
+  stroke-opacity: 0.5 !important;
+}
+
+.svg {
+  width: 100%;
+  height: 100%;
+
+  > svg {
+    width: 100%;
+  }
+}
+
+.legend {
+  padding: 20px 15px 10px;
+  display: inline-block;
+  text-align: left;
+}
+
+.legendKey {
+  display: inline-block;
+  margin: 0 10px 5px;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.legendText {
+  margin-left: 18px;
+}
+
+.lineAvg, .lineDeposit, .linePoor {
+  margin-top: 6px;
+  height: 3px;
+  width: 12px;
+  float: left;
+  margin-right: 5px;
+}
+
+.lineAvg {
+  background: #003100;
+}
+
+.linePoor {
+  background: #aaa;
+}
+
+.lineDeposit {
+  background: $green-color1;
+}
+
+.disclaimer {
+  margin: 10px 10px 5px;
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.success {
+  fill: $green-color1;
+}
+
+.danger {
+  fill: $danger-color;
+}

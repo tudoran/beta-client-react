@@ -1,0 +1,18 @@
+@import '../../../styles/variables/colors';
+
+.infoBar {
+  background: $green-color1;
+  margin: 15px -16px -16px;
+  padding: 7px 0;
+  line-height: 32px;
+  border-radius: 3px 3px 0 0;
+  color: $bg-color2;
+  font-weight: 400;
+}
+
+.content {
+  a, a:hover, a:focus {
+    color: $bg-color2;
+    text-decoration: underline;
+  }
+}

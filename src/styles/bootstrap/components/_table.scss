@@ -1,0 +1,80 @@
+$table-background-color: #F9F9F9;
+$table-background-alt-color: #FFFFFF;
+$table-cell-padding: 20px 10px 20px 15px;
+$table-border: 1px solid #DDDDDD;
+
+.table {
+  &>thead>tr>th {
+    background: $table-background-color;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: right;
+    text-transform: uppercase;
+    padding-left: 10px;
+  }
+
+  &>thead>tr>th:first-of-type {
+    text-align: left;
+  }
+
+  &>tfoot>tr>td {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right;
+    text-transform: uppercase;
+    padding: $table-cell-padding;
+    padding-left: 10px;
+    vertical-align: middle;
+  }
+
+  &>tfoot>tr>td:first-of-type {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  &>tbody>tr>td {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: right;
+    padding: $table-cell-padding;
+    vertical-align: middle;
+  }
+
+  &>tbody>tr>td:first-of-type {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+  }
+}
+
+.table-striped {
+  &>tbody>tr:nth-of-type(even) {
+    background-color: $table-background-color;
+  }
+
+  &>tbody>tr:nth-of-type(odd) {
+    background-color: $table-background-alt-color;
+  }
+
+}
+
+.table-bordered {
+  &>thead>tr>th,
+  &>thead>tr>td,
+  &>tfoot>tr>th,
+  &>tfoot>tr>td {
+    border: $table-border;
+  }
+
+  &>tbody>tr>th,
+  &>tbody>tr>td {
+    border-left: $table-border;
+    border-right: $table-border;
+    border-top-width: 0;
+    border-bottom-width: 0;
+  }
+}
+
+.td-data {
+
+}

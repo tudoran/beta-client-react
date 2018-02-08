@@ -1,0 +1,9 @@
+/.idea/*
+.DS_STORE
+*.log
+.idea/*
+node_modules
+dist
+coverage
+.env
+test_results/

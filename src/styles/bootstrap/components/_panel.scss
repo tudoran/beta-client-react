@@ -1,0 +1,13 @@
+.panel {
+  border-radius: 3px;
+  border: 1px solid $border-color;
+}
+.panel-heading {
+  padding: 15px;
+  border-bottom: 1px solid $border-color;
+}
+.panel-default {
+  .panel-heading {
+    background-color: transparent;
+  }
+}

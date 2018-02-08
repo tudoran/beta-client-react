@@ -1,0 +1,40 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/mixins';
+
+$wim-modal-border-color:    #e6e6e6;
+
+.wireInstructionsModal {
+  max-width: 600px;
+}
+.instructions {
+  border: 1px solid $wim-modal-border-color;
+  margin: 20px 0;
+  dl {
+    margin: 15px 10px;
+    @include clearfix();
+  }
+  dt {
+    float: left;
+    width: 40%;
+    padding-bottom: 10px;
+    clear: left;
+    font-weight: 300;
+  }
+  dd {
+    float: left;
+    width: 60%;
+    color: $green-color2;
+    padding-bottom: 10px;
+    font-weight: 300;
+  }
+}
+.instructionTitle {
+  border-bottom: 1px solid $wim-modal-border-color;
+  margin: 10px;
+  padding: 10px 0;
+  font-size: 18px;
+  color: $text-dark-color;
+}
+.footerNote {
+  margin-bottom: 0;
+}

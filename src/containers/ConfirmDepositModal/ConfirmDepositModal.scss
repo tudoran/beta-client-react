@@ -1,0 +1,16 @@
+@import '../../styles/variables/colors';
+
+.confirmDepositModal {
+  max-width: 435px;
+  font-size: 14px;
+}
+
+.modal-footer {
+  border-top: none;
+  padding-top: 0;
+}
+
+.static-value-to {
+  display: inline-block;
+  font-weight: bold;
+}

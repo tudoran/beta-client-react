@@ -1,0 +1,31 @@
+@import '../../styles/variables/colors';
+@import '../../styles/variables/dimensions';
+
+.activityList {
+	width: 100%;
+  font-size: 16px;
+	>span:first-of-type {
+		width: 110px;
+		@media (min-width: $md-width) {
+			width: 150px;
+		}
+	}
+}
+
+.activityListToggle {
+  width: 100%;
+  border-color: $border-color;
+
+  > span:first-of-type {
+    float: left;
+    color: $btn-primary-hover-color;
+    width: calc(100% - 20px);
+    overflow: hidden;
+    text-align: left;
+  }
+
+  > span:last-of-type {
+    float: right;
+    color: $btn-primary-hover-color;
+  }
+}

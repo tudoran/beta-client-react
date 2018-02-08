@@ -1,0 +1,91 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+.content {
+  margin-top: 25px;
+}
+.contentRow {
+  margin: 30px 0 50px;
+}
+.personalInfoContainer {
+  padding: 0 30px;
+  width: 300px;
+  float: left;
+}
+.description {
+  font-size: 16px;
+  font-weight: 400;
+  color: $primary-color;
+}
+.bottomActions {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.retirementIncomeWrapper {
+  padding: 0 20px;
+  text-align: center;
+}
+.sectionsWrapper {
+  margin-top: 30px;
+  display: inline-block;
+}
+.avatarSection {
+  width: 84px;
+  height: 84px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.leftAvatar {
+  margin-top: 2px;
+  width: 42px;
+  height: 80px;
+  float: left;
+  background-position: left center;
+  background-repeat: none;
+  background-size: cover;
+}
+.rightAvatar {
+  width: 42px;
+  height: 84px;
+  float: right;
+  background-position: right center;
+  background-repeat: none;
+  background-size: cover;
+}
+.formSection {
+  text-align: center;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  @media (max-width: $md-width - 1) {
+    display: block;
+  }
+}
+.nameSection {
+  font-size: 24px;
+  text-align: center;
+  color: $primary-color;
+  margin-right: 250px;
+}
+.inputWrapper {
+}
+.labelSection {
+  font-size: 16px;
+  display: inline-block;
+}
+.inputControl {
+  text-align: right;
+  margin-left: 10px;
+  width: 250px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.wizardBtn {
+  text-align: right;
+  @media (max-width: $md-width - 1) {
+    margin-top: 10px;
+  }
+}

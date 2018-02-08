@@ -1,0 +1,42 @@
+@import 'variables/colors';
+@import 'mixins';
+
+$margin-large:				20px;
+$margin-default:			15px;
+
+.userSettings {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.sectionWrapper {
+	border: 1px solid $border_color;
+	padding: 0 $margin-default;
+	@include border-radius(5px);
+}
+
+.sectionWrapper + .sectionWrapper {
+	margin-top: 20px;
+}
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.leftCol {
+	padding: 0 $margin-large;
+	@media only screen and ( min-width: 992px ) {
+		border-right: 1px solid $border_color;
+		margin-right: -1px;
+		width: 50%;
+		float: left;
+	}
+}
+.rightCol {
+	padding: 0 $margin-large;
+	@media only screen and ( min-width: 992px ) {
+		border-left: 1px solid $border_color;
+		width: 50%;
+		float: left;
+	}
+}

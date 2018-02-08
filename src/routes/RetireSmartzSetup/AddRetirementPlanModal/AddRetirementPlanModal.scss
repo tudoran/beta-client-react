@@ -1,0 +1,9 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+.primaryColor {
+	color: $primary-color;
+}
+.textColor {
+	color: $text-color;
+}

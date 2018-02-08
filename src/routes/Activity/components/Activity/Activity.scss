@@ -1,0 +1,8 @@
+@import '../../../../styles/variables/colors';
+@import '../../../../styles/variables/dimensions';
+@import '../../../../styles/mixins';
+
+.footerWrapper {
+  padding: 15px;
+  @include clearfix();
+}

@@ -1,0 +1,51 @@
+:global {
+  @import 'base';
+  @import 'vendor/normalize';
+
+  html {
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
+
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    font-family: $font-name;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    @media (max-width: $sm-width - 1) {
+      width: $content-width;
+    }
+    font-family: $font-name;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 0;
+    color: $text-color;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+  }
+
+  a {
+    color: $primary-color;
+    &:hover, &:focus {
+      color: $primary-lighten-color;
+    }
+  }
+
+  .page {
+    margin-top: 30px;
+  }
+}

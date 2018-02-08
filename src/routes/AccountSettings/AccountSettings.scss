@@ -1,0 +1,68 @@
+@import 'variables/colors';
+@import 'mixins';
+
+$margin-large:				20px;
+$margin-default:			15px;
+$margin-small:				5px;
+
+.page-title {
+	font-size: 21px;
+	font-weight: 400;
+	padding: 25px 0;
+	color: $primary-darken-color;
+}
+
+.section-wrapper {
+	border: 1px solid $border_color;
+	padding: 0 $margin-default;
+	@include border-radius(5px);
+}
+
+.section-wrapper + .section-wrapper {
+	margin-top: 20px;
+}
+.section-title {
+	padding: 20px 0 15px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.form-group {
+	margin-bottom: $margin-small * 2;
+	margin-left: -$margin-small !important;
+	margin-right: -$margin-small !important;
+	&:before, &:after {
+		display: table;
+		content: '';
+	}
+	&:after {
+		clear: both;
+	}
+	[class*='col-'] {
+		padding-left: $margin-small !important;
+		padding-right: $margin-small !important;
+	}
+	[class*='row'] {
+		margin-left: -$margin-small !important;
+		margin-right: -$margin-small !important;
+	}
+}
+
+.left-col {
+	padding: 0 $margin-large;
+	@media only screen and ( min-width: 992px ) {
+		border-right: 1px solid $border_color;
+		margin-right: -1px;
+		width: 50%;
+		float: left;
+	}
+}
+.right-col {
+	padding: 0 $margin-large;
+	@media only screen and ( min-width: 992px ) {
+		border-left: 1px solid $border_color;
+		width: 50%;
+		float: left;
+	}
+}

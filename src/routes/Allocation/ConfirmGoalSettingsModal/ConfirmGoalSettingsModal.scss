@@ -1,0 +1,96 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+
+$border-dark-color: #999;
+
+.advisorWarning {
+  border: 1px solid $border-dark-color;
+  padding: 20px;
+  margin: 0 0 16px 0;
+  text-align: center;
+  h3 {
+    color: $modal-title-color;
+    font-weight: 400;
+    margin: 0 0 14px 0;
+    font-size: 18px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.advisorInfo {
+  margin-top: 10px;
+  line-height: 1;
+  font-size: 16px;
+  span {
+    margin-top: 5px;
+    padding: 0 10px;
+    display: block;
+    position: relative;
+    @media (min-width: $sm-width) {
+      display: inline;
+      &:not(:last-child) {
+        border-right: 1px solid $border-dark-color;
+      }
+    }
+  }
+}
+
+.section {
+  position: relative;
+  padding: 15px 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.status {
+  float: left;
+  width: 30px;
+  margin: -14px 0 0;
+}
+
+.data {
+  overflow: hidden;
+  margin-left: 40px;
+}
+
+.attribute {
+  font-weight: 500;
+  @media (max-width: $sm-width - 1) {
+    margin-bottom: 15px;
+  }
+}
+
+.name {
+  color: $modal-title-color;
+  margin: 0 0 8px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.value {
+  font-size: 18px;
+  color: $text-dark-color;
+  margin-bottom: 8px;
+}
+
+.detail {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.depositLabel {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  color: $text-color;
+}
+
+.tooltipIcon {
+	margin-left: 5px;
+	cursor: pointer;
+  color: $text-light-color;
+}

@@ -1,0 +1,98 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+.dropdownItem {
+	border-bottom: 1px solid #aaa;
+}
+
+.fullRow {
+	height: 65px;
+	line-height: 65px;
+	display: block;
+	padding: 0 20px;
+}
+
+.link {
+	display: block;
+	color: #686868;
+	transition: color .2s;
+	cursor: pointer;
+	&:hover {
+		color: $primary-color;
+		text-decoration: none;
+	}
+}
+
+:global .activeTarget.active:before {
+	content: '•';
+	position: absolute;
+	left: 2px;
+	font-size: 19px;
+	color: $primary-color;
+}
+
+.dropdown {
+	min-width: 258px;
+	background-color: rgba(255, 255,255, .95);
+	padding: 0;
+	&:before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 5px 8px;
+		border-color: transparent transparent rgba(255, 255, 255, .95);
+		position: absolute;
+		top: -8px;
+		right: 16px;
+	}
+}
+
+.halfLink {
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	border: none;
+	padding: 12px 0 10px;
+	text-align: center;
+}
+
+.splitRow {
+	margin: 0;
+
+	> div:first-child {
+		border-right: 1px solid #aaa;
+	}
+}
+
+.navButton {
+	float: none !important;
+	color: white !important;
+	background-color: transparent !important;
+	border: 1px solid transparent !important;
+	border-radius: 4px !important;
+	padding: 5px;
+	vertical-align: middle;
+	@include transition(border .15s);
+	&:focus, &:hover {
+		outline: none;
+		color: white !important;
+		border-color: rgba(255, 255, 255, .8) !important;
+	}
+	&:focus:active {
+		background-color: rgba(255, 255, 255, .2) !important;
+	}
+}
+
+.welcomeText {
+	font-size: 16px;
+	margin-right: 5px;
+	color: white;
+	vertical-align: middle;
+}
+
+:global {
+	.header-nav.open button {
+		background-color: rgba(255, 255, 255, .2) !important;
+	}
+}

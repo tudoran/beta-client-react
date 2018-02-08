@@ -1,0 +1,20 @@
+@import '../../../styles/variables/colors';
+
+.slider {
+  padding-top: 10px;
+
+  > div:before, > div > div:before {
+    background: none;
+  }
+}
+
+.recommended {
+  width: 1%;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  margin-top: 6px;
+  z-index: 1;
+  background: #7db9e8;
+}

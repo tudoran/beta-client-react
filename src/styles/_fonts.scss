@@ -1,0 +1,7 @@
+@each $f in $font-variants {
+  @font-face {
+    font-family: $font-name;
+    font-style: normal;
+    font-weight: nth($f,1)
+  }
+}

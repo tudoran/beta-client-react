@@ -1,0 +1,101 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/mixins';
+
+.whatToDoWrap {
+  position: relative;
+  padding-top: 10px;
+  p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.wtdHeading {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: $primary-color;
+}
+.eligibilitiesText {
+  margin-bottom: 45px;
+  padding-left: 5px;
+  li {
+    margin: 0 0 15px 15px;
+    line-height: 1.25;
+    font-size: 16px;
+  }
+}
+.wtdSeparator {
+  border-top: 1px solid $border-color;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  width: 15%;
+}
+.retirementSavings {
+  background: $primary-color;
+  text-align: center;
+  color: white;
+  padding: 30px 0;
+}
+p.rsHeading {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+p.savingsAmount {
+  font-size: 26px;
+  margin-bottom: 0;
+}
+.savingsBreakdown {
+  border-left: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+  border-right: 1px solid $border-color;
+}
+.investmentDistribution {
+  text-align: center;
+  border-bottom: 1px solid $border-color;
+  padding: 40px 85px 10px;
+  @include clearfix();
+}
+.rsColumn {
+  float: left;
+  position: relative;
+  height: 175px;
+  margin-bottom: 50px;
+}
+.rsFill {
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+}
+.rsName {
+  position: absolute;
+  top: 100%;
+  font-size: 13px;
+  font-weight: 400;
+  width: 100%;
+  margin: 10px auto 30px;
+  color: $primary-color;
+}
+.savingsLineItems {
+  padding: 15px 25px;
+}
+.lineItem {
+  padding: 12px 0 9px;
+  font-size: 16px;
+  @include clearfix();
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+}
+.sliName {
+  float: left;
+}
+.sliValue {
+  float: right;
+}
+.bottomActions {
+  clear: both;
+  margin-top: 30px;
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+@import '../../../styles/variables/colors';
+
+.transactionInfo {
+	color: $text-dark-color;
+	font-size: 12px;
+	font-weight: 400;
+	cursor: pointer;
+	line-height: 20px;
+	padding-top: 10px;
+	text-transform: uppercase;
+}
+
+.on {
+	.ts-icon-left {
+		color: $primary-color;
+	}
+}
+
+.off {
+	color: $text-light-color;
+	.ts-icon-left {
+		color: $text-light-color;
+	}
+}
+
+.inlineBlock {
+	display: inline-block;
+}
+
+.iconLeft {
+	margin-right: 3px;
+}
+
+.amount {
+	font-size: 16px;
+	text-align: right;
+}

@@ -1,0 +1,46 @@
+@import '../styles/variables/colors';
+
+.portfolio-diagram-block {
+  margin-top: 8px;
+}
+
+.title {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: $text-dark-color;
+}
+
+.diagram {
+  height: 241px;
+}
+
+.allocation {
+  margin-bottom: 15px;
+  line-height: 30px;
+}
+
+.allocationLabels {
+  padding-right: 0;
+}
+
+.allocationValue {
+  padding-left: 0;
+}
+
+.adjust {
+  width: 100%;
+  background-color: $btn-primary-hover-color;
+  color: #ffffff;
+
+  &:hover, &:focus {
+    color: #ffffff !important;;
+    background-color: $btn-primary-hover-color !important;
+    border-color: $btn-primary-hover-color !important;;
+  }
+}
+
+.tooltip {
+  color: $text-light-color;
+  margin-left: 5px;
+  cursor: pointer;
+}

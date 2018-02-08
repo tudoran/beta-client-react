@@ -1,0 +1,22 @@
+$margin-small:				5px;
+
+.formGroup {
+	margin-bottom: $margin-small * 2;
+	margin-left: -$margin-small !important;
+	margin-right: -$margin-small !important;
+	&:before, &:after {
+		display: table;
+		content: '';
+	}
+	&:after {
+		clear: both;
+	}
+	[class*='col-'] {
+		padding-left: $margin-small !important;
+		padding-right: $margin-small !important;
+	}
+	[class*='row'] {
+		margin-left: -$margin-small !important;
+		margin-right: -$margin-small !important;
+	}
+}

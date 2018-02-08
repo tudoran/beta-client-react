@@ -1,0 +1,42 @@
+@import '../../styles/variables/colors';
+@import '../../styles/variables/dimensions';
+
+$header-nav-font-size: 15px;
+
+.navbar {
+	border-bottom: 1px solid $border_color;
+}
+
+.navbarNav {
+	margin: 0;
+	float: left;
+}
+
+.listItem {
+	float: left;
+}
+
+.link {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: $header-nav-font-size;
+	font-weight: 300;
+	color: $primary-color;
+	position: relative;
+	&:hover, &.active {
+		background-color: transparent !important;
+		color: $primary-lighten-color;
+		span {
+			border-top-color: $primary-lighten-color;
+		}
+	}
+	span {
+		content: '';
+		width: 100%;
+		border-top: 3px solid transparent;
+		position: absolute;
+		bottom: -3px;
+		left: 0;
+		transition: border-color .2s;
+	}
+}

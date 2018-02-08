@@ -1,0 +1,48 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+$progress-nav-color:    #aaa;
+.progressNavWrap {
+  margin: 0 20px;
+}
+.progressNav {
+  padding-top: 15px;
+}
+.stepLabels {
+  margin: 0 0 20px;
+  padding: 0;
+}
+.navItem {
+  box-sizing: border-box;
+  color: $progress-nav-color;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  @include transition(all .2s linear);
+  &.active {
+    color: $green-color3;
+  }
+}
+.items5 {
+  margin-bottom: 20px;
+  .navItem {
+    width: 20%;
+  }
+}
+.items4 {
+  margin-bottom: 20px;
+  .navItem {
+    width: 25%;
+  }
+}
+.progressBar {
+  height: 3px;
+  background: $bg-color2;
+}
+.innerBar {
+  background: $green-color3;
+  @include transition(all .5s ease);
+  height: 100%;
+  width: 0;
+}

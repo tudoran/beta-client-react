@@ -1,0 +1,12 @@
+.btn-toggle {
+	&:not(.active) {
+		.text-on {
+			display: none;
+		}
+	}
+	&.active {
+		.text-off {
+			display: none;
+		}
+	}
+}

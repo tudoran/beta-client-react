@@ -1,0 +1,54 @@
+@import '../../../styles/variables/colors';
+
+.constraint {
+  padding: 8px 5px;
+}
+
+.constraintClosed {
+  cursor: pointer;
+}
+
+.toggleHandle {
+  width: 25px;
+  float: left;
+}
+
+.removeWrapper {
+  float: right;
+  width: 25px;
+  text-align: right;
+}
+
+.fieldsWrapper {
+  margin: 0 25px 7px;
+  font-size: 12px;
+  [class*=form-group] {
+    margin-bottom: 5px;
+  }
+}
+
+.comparisonWrapper {
+  margin-top: 10px;
+}
+
+.comparisonSelect {
+  margin-right: 45px;
+}
+
+.configuredValue {
+  float: right;
+  padding-top: 4px;
+}
+
+.sliderWrapper {
+  width: 195px;
+  margin-top: 10px;
+}
+
+.btnDelete {
+  color: $text-light-color;
+  cursor: pointer;
+  &:hover, &:focus {
+    color: $primary-color;
+  }
+}

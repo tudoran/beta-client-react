@@ -1,0 +1,20 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+.ppContent {
+  margin-top: 40px;
+  h3 {
+    font-weight: 300;
+    color: $green-color2;
+  }
+}
+
+.bottomActions {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.primaryColor {
+  color: $primary-color;
+}

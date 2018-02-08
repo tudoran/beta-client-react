@@ -1,0 +1,46 @@
+@import '../styles/variables/colors';
+
+.text {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $text-dark-color;
+  font-weight: 500;
+}
+
+.total {
+  color: $text-dark-color;
+}
+
+.positionListFooter {
+  border-top: 1px solid $table-border-color;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin: 10px 0 8px 0;
+}
+
+.labels {
+  width: 80px;
+  text-align: right;
+}
+
+.values {
+  width: calc(100% - 80px);
+}
+
+.smallText {
+  line-height: 20px;
+  padding-top: 1px;
+  text-align: right;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: $text-dark-color;
+  font-weight: 300;
+}
+
+.percentage {
+  @extend .text;
+}
+
+.amount {
+  @extend .text;
+}

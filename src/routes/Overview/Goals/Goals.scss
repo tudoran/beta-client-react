@@ -1,0 +1,29 @@
+@import '../../../styles/variables/colors';
+
+.balanceWrapper {
+	padding-top: 5px;
+}
+
+.balanceRowWrapper {
+	margin: 5px 0 10px;
+}
+
+.depositButtonWrapper {
+	padding-right: 5px;
+}
+
+.balance {
+	font-size: 30px;
+}
+
+.taxLoss {
+	padding-top: 20px;
+}
+
+.taxLossTitle {
+	color: $primary-color;
+}
+
+.gauge {
+	margin-top: 40px;
+}

@@ -1,0 +1,32 @@
+:global {
+  @import '../../../node_modules/react-select-plus/scss/select';
+  @import '../../styles/variables/colors';
+  // Customizations
+  $select-text-color: #282828;
+  $select-input-border-color: #DDD;
+  $select-option-focused-bg: #E3E2E2;
+  $select-input-border-radius: 3px;
+
+  $select-item-color:                #ffffff;
+  $select-item-bg:                   $green-color3;
+  $select-item-border-color:         darken($select-item-bg, 10%);
+  $select-item-hover-color:          $select-item-color;
+  $select-item-hover-bg:             darken($select-item-bg, 5%);
+  $select-item-gutter:               3px;
+  $select-item-padding-vertical:     4px;
+  $select-input-border-focus:        $green-color1;
+
+  @import '../../../node_modules/react-select-plus/scss/control';
+  @import '../../../node_modules/react-select-plus/scss/menu';
+  @import '../../../node_modules/react-select-plus/scss/mixins';
+  @import '../../../node_modules/react-select-plus/scss/multi';
+  @import '../../../node_modules/react-select-plus/scss/spinner';
+
+  .Select-option-group {
+    padding: $select-padding-vertical 0;
+  }
+  .Select-option-group-label {
+    padding: $select-item-padding-vertical $select-item-padding-horizontal;
+    font-weight: 600;
+  }
+}

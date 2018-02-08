@@ -1,0 +1,25 @@
+.gauge {
+  &-label {
+    position: relative;
+    top: 12px;
+    padding: 0 10px 0 0;
+    font: 400 20px/1 Roboto;
+    text-align: center;
+  }
+
+  &-el {
+    display: inline-block;
+    svg {
+      overflow: visible !important;
+    }
+  }
+
+  &-path {
+    position: relative;
+  }
+
+  &-text {
+    font: 400 10px Roboto;
+    letter-spacing: 3px;
+  }
+}

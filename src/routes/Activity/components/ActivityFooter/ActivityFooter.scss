@@ -1,0 +1,24 @@
+@import '../../../../styles/variables/colors';
+
+.downloadAdobeReader {
+  float: left;
+  font-size: 10px;
+  color: #aaa;
+}
+
+.downloadActivity {
+  float: right;
+  text-align: right;
+  cursor: pointer;
+}
+
+.downloadActivityLink {
+  color: $text-color;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+.downloadActivityText {
+  margin-left: 5px;
+}

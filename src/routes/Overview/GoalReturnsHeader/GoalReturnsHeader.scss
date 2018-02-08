@@ -1,0 +1,13 @@
+@import '../../../styles/variables/colors';
+
+.goalReturnsHeader {
+	font-size: 16px;
+	color: $text-dark-color;
+	line-height: 30px;
+}
+
+.toggleBtnWrapper {
+	margin-right: 5px;
+	width: 20px;
+	display: inline-block;
+}

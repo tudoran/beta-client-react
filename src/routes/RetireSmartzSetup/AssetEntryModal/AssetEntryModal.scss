@@ -1,0 +1,18 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+.description {
+  color: $primary-color;
+  font-size: 13px;
+  font-weight: 400;
+}
+.label {
+  color: $text-color;
+}
+
+.assetEntryModal {
+  @media (min-width: $sm-width) {
+    width: 750px;
+  }
+}

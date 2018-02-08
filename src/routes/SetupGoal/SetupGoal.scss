@@ -1,0 +1,226 @@
+@import '../../styles/variables/colors';
+@import '../../styles/mixins';
+
+$panel-border-color:  #e6e6e6;
+
+.page-title {
+  line-height: 30px;
+  padding: 25px 0;
+  font-size: 21px;
+  color: $primary-darken-color;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.goal-panel {
+  overflow: hidden;
+  @include clearfix();
+}
+
+.controls {
+  @media (min-width: 768px) {
+    width: 25%;
+    float: left;
+  }
+}
+
+.info {
+  color: $text-dark-color;
+  @media (min-width: 768px) {
+    width: 75%;
+    float: left;
+    border-left: 1px solid $panel-border-color;
+  }
+}
+
+.select-goal {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.adviceAccount {
+  border-bottom: 1px solid $panel-border-color;
+  &.active {
+    .goal-name {
+      cursor: default;
+      color: white;
+      font-weight: 500;
+      background: $primary-color;
+    }
+    .goal-contents {
+      display: block;
+    }
+  }
+}
+
+.goal-name {
+  cursor: pointer;
+  position: relative;
+  min-height: 50px;
+  padding: 15px 10px 15px 15px;
+  &:hover {
+    .goal-edit {
+      display: inline-block;
+    }
+  }
+}
+
+.goal-edit {
+  display: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.goal-contents {
+  display: none;
+  color: #003100;
+  padding: 13px 10px 13px 15px;
+  font-size: 14px;
+  background-color: white;
+  box-shadow-custom: inset 0 4px 6px -5px;
+  &:after {
+    clear: both;
+    display: block;
+    content: '';
+  }
+}
+
+.chevron-right {
+  float: right;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  margin-top: -5px;
+  margin-right: -5px;
+}
+
+.form-paragraph {
+  line-height: 50px;
+}
+
+.type-tooltip {
+  margin: 5px 0 0;
+  cursor: pointer;
+  border-bottom: 1px dotted $border-color;
+}
+
+.info-heading {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 15px 25px;
+  margin-bottom: 0;
+}
+
+.narrative-container {
+  min-height: 175px;
+  padding: 20px;
+  position: relative;
+  @include box-shadow-custom(inset 0 4px 6px -5px #788797);
+  background-color:#f5f5f5;
+}
+
+.narrative-outline {
+  padding: 10px;
+  background: $panel-border-color;
+  position: relative;
+  @include box-shadow-custom(0 2px 4px $shadow-color, -1px 0 3px $shadow-color, 1px 0 3px $shadow-color);
+  @include border-radius(6px);
+}
+
+.narrative-help {
+  font-size: 14px;
+  padding: 7px 10px;
+  line-height: 1;
+  @include border-radius(2px);
+  @include box-shadow-custom(0 0 3px $shadow-color);
+
+  background: #f5f5f5;
+  position: absolute;
+  z-index: 2;
+  right: 30px;
+  top: -8px;
+}
+
+.help-text {
+  border-bottom: 1px dotted #686868;
+  cursor: pointer;
+  &:hover {
+    border-bottom-color: $btn-primary-color;
+    color: $btn-primary-color;
+  }
+}
+
+.narrative-inside {
+  font-size: 14px;
+  background: #fff;
+  @include box-shadow-custom(0 2px 2px $shadow-color, 0 0 1px $shadow-color, 0 0 1px $shadow-color);
+  @include border-radius(6px);
+}
+
+.madlib {
+  min-height: 74px;
+  padding: 20px 30px 30px;
+  input {
+    font-size: 14px;
+    height: auto;
+    border: none;
+    border-bottom: 1px solid #788797;
+    background: transparent;
+    filter: none;
+    color: $primary-darken-color;
+    text-align: center;
+    @include border-radius(0);
+    width: 70px;
+    font-weight: 500;
+    line-height: 2.2;
+    padding: 0 5px;
+    &:focus {
+      outline: none;
+    }
+  }
+  > div:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.next-step {
+  padding: 10px 15px;
+  width: 100%;
+  display: table;
+  min-height: 40px;
+  color: $text-dark-color;
+  background: #f5f5f5;
+  border-top: 1px solid white;
+  @include box-shadow-custom(0 -1px 0 #e6e6e6);
+  @include border-radius-separate(0, 0, 6px, 6px);
+  > div {
+    margin-bottom: 0;
+  }
+}
+
+.next-step-text {
+  color: $text-dark-color;
+  font-size: 14px;
+  font-weight: 300;
+  padding-right: 15px;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.next-step-btn {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+  width: 80px;
+}
+
+.loadingOverlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.8);
+}

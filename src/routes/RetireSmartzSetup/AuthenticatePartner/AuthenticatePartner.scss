@@ -1,0 +1,27 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+.apContent {
+  margin-top: 40px;
+  h3 {
+    font-weight: 300;
+    color: $green-color2;
+  }
+}
+
+.bottomActions {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.passwordGroup {
+  margin-bottom: 0;
+}
+
+.apDescription {
+  margin-bottom: 30px;
+}
+
+.emailForm {
+  margin-bottom: 30px;
+}

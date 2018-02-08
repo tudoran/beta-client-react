@@ -1,0 +1,40 @@
+@import '../../styles/variables/colors';
+@import '../../styles/variables/dimensions';
+
+.header {
+	background-color: $header-bg-color;
+}
+
+.inner {
+	height: 100px;
+	display: table;
+	width: 100%;
+}
+
+.logo {
+	display: table-cell;
+	vertical-align: middle;
+	width: 70%;
+}
+
+.actions {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.logoImage {
+	max-height: 100px;
+	height: auto;
+	width: auto;
+	padding: 10px 15px;
+}
+
+.advisorAlert {
+	background-color: #ffbc7c;
+	text-align: center;
+	padding: 3px 0;
+	font-size: 18px;
+	font-weight: normal;
+	color: $text-dark-color;
+}

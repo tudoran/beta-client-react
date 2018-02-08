@@ -1,0 +1,36 @@
+@import '../../../styles/variables/colors';
+
+.controlWrap {
+  margin-right: -16px;
+  padding: 15px 0;
+  border-top: 2px solid transparent;
+}
+
+.dirty {
+  border-top-color: $primary-color;
+}
+
+.title {
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 11px;
+  color: $text-dark-color;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.reset {
+  text-align: right;
+  padding-top: 5px;
+  cursor: pointer;
+  a {
+    color: $text-light-color;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+.currentValue {
+  font-size: 12px;
+}

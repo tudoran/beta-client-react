@@ -1,0 +1,7 @@
+@import '../../styles/variables/colors';
+
+.tooltip {
+  color: $text-light-color;
+  margin-left: 5px;
+  cursor: pointer;
+}

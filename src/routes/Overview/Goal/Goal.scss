@@ -1,0 +1,21 @@
+@import '../../../styles/variables/colors';
+
+.balanceRowWrapper {
+	margin: 5px 0 10px;
+}
+
+.depositButtonWrapper {
+	padding-right: 5px;
+}
+
+.active {
+	opacity: 1;
+}
+
+.archiveRequested, .closing, .archived {
+  opacity: 0.4;
+}
+
+.isDragging {
+  opacity: 0;
+}

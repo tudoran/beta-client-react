@@ -1,0 +1,21 @@
+@import '../../styles/variables/colors';
+
+.fourOhFour {
+  position: absolute;
+  top: 50%;
+  height: 194px;
+  margin-top: -97px;
+  width: 100%;
+}
+
+.fourOhFourText {
+  margin: 0;
+  font-size: 120px;
+  line-height: 90px;
+  color: $text-dark-color;
+}
+
+.notFoundText {
+  font-size: 30px;
+  color: $text-dark-color;
+}

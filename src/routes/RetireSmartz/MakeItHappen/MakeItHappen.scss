@@ -1,0 +1,67 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/mixins';
+
+.makeItHappenWrap {
+  position: relative;
+}
+.mihHeading {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: $primary-color;
+}
+.suggestedGoals {
+}
+.newGoalColumn {
+  padding: 15px;
+}
+.outer {
+  border: 1px solid $border-color;
+  position: relative;
+  text-align: center;
+}
+.inner {
+  padding-top: 100%;
+  position: relative;
+  h2 {
+    padding: 0 0 25px;
+    font-size: 22px;
+    margin: 0 0 15px;
+    line-height: 1.3;
+  }
+}
+.notAdded {
+  color: white;
+  background-color: $primary-color;
+  h2 {
+    color: white;
+  }
+  p {
+    line-height: 1.4;
+    margin: 15px 0 30px;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+.added {
+  h2 {
+    color: $primary-color;
+  }
+  h3 {
+    color: $text-light-color;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0 15px;
+  }
+}
+.goalContent {
+  position: absolute;
+  left: 0;
+  right: 0;
+  @include vcenter();
+  padding: 30px;
+}
+.buttonSection {
+  width: 70%;
+  margin: 0 auto;
+}

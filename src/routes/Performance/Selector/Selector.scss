@@ -1,0 +1,37 @@
+@import '../../../styles/variables/colors';
+
+.selector {
+  display: inline-block;
+  font-size: 14px;
+  padding: 2px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.option {
+  float: left;
+  overflow: hidden;
+  border: 1px solid #fff;
+}
+
+.optionButton {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 12px;
+  color: $text-dark-color;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+.optionButtonActive {
+  background: $green-color3;
+  color: #fff;
+  &:hover, &:focus {
+    background: $green-color3;
+    color: #fff;
+  }
+}

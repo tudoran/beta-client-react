@@ -1,0 +1,6 @@
+export default {
+  MIN_TERM: 1,
+  MAX_TERM: 50,
+  LOW_BALANCE_THRESHOLD: 10,
+  MAX_TARGET_AMOUNT: 1e8
+}

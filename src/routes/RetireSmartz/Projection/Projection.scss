@@ -1,0 +1,160 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+$bg-self-color: rgba(0, 128, 0, .15);
+$bg-partner-color: rgba(22, 0, 128, .15);
+
+.projectionWrapper {
+  padding: 0 15px;
+}
+.leftPane {
+  border-right: 1px solid $border-color;
+  padding: 15px;
+}
+.bottomActions {
+  clear: both;
+  margin-top: 20px;
+  text-align: center;
+}
+.label {
+  font-size: 14px;
+  color: $text-dark-color;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.customIcon {
+  top: auto !important;
+  bottom: 0;
+}
+.noMarginBottom {
+  margin-bottom: 0 !important;
+}
+
+.linkCalculated {
+  color: $danger-color;
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: underline;
+  &:hover, &:focus {
+    color: $danger-color;
+    text-decoration: none;
+  }
+}
+.linkRecommended {
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: underline;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+.clientInfoBox {
+  border: 1px solid $border-color;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+  &.self {
+    background-color: $bg-self-color;
+  }
+  &.partner {
+    background-color: $bg-partner-color;
+  }
+}
+.narrowRow {
+  margin: 0 -4px;
+}
+.narrowCol {
+  padding: 0 4px;
+}
+.smallLabel {
+  font-size: 12px;
+  color: $text-dark-color;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+.dangerAlert {
+  font-size: 13px;
+  padding: 8px 0;
+  color: $danger-color;
+}
+.relativeWrapper {
+  position: relative;
+}
+
+.clientName {
+  font-size: 24px;
+  color: $primary-color;
+}
+.avatar {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.topSection {
+  margin-bottom: 15px;
+  &:after {
+    clear: both;
+    display: table;
+    content: '';
+  }
+}
+.rightPane {
+  padding: 15px;
+}
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  color: $primary-color;
+  padding: 0 3%;
+}
+.rightPaneForm {
+  padding: 0 10%;
+  position: relative;
+}
+.treeBG {
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 480px;
+  background-size: contain;
+}
+.rightPaneLabel {
+  text-align: center !important;
+  color: $text-dark-color;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 0;
+}
+.vmRow {
+  margin: 0;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+.vmCol {
+  padding: 0 5px;
+  vertical-align: middle;
+  display: table-cell;
+  float: none;
+  height: 480px;
+}
+.linkApply {
+  font-size: 12px;
+  font-style: italic;
+  text-decoration: underline;
+  &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+.operator {
+  font-size: 80px;
+  line-height: 0.7;
+  color: $text-dark-color;
+  font-weight: 400;
+  vertical-align: middle;
+}

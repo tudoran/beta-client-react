@@ -1,0 +1,50 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+$pib-border-color: rgba(128, 128, 128, .25);
+$pib-text-color: rgb(0,128, 0);
+$pib-bg-color: rgba(0, 128, 0, .15);
+
+.personalInfoBox {
+  @include border-radius(10px);
+  border: 2px solid $pib-border-color;
+  width: 240px;
+  background-color: $pib-bg-color;
+  color: $pib-text-color;
+  font-weight: 400;
+  margin: 0 auto;
+}
+.avatar {
+  width: 64px;
+  display: table-cell;
+  vertical-align: top;
+  img {
+    max-width: 100%;
+  }
+}
+.name {
+  text-shadow: 0 0 1px $pib-border-color;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 36px;
+  word-wrap: break-word;
+}
+.topRow {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 15px 15px 10px;
+}
+.infoList {
+  padding: 0 15px 15px;
+  font-size: 18px;
+  li {
+    margin-left: 15px;
+    &:first-child:last-child {
+      margin-left: 0;
+      list-style: none;
+    }
+  }
+}

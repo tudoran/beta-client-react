@@ -1,0 +1,97 @@
+@import '../../styles/variables/colors';
+@import '../../styles/variables/dimensions';
+
+.headingActions {
+  padding-top: 2px;
+  display: inline-block;
+}
+
+.headingActions + .headingActions {
+  padding-left: 10px;
+}
+
+.btnHeading {
+  padding: 5px 15px;
+  min-width: 75px;
+  height: 35px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.allocationPanel {
+  [class*=panel-body] {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.sidebar {
+  padding-bottom: 15px;
+  @media (min-width: $sm-width) {
+    border-right: 1px solid $border-color;
+    margin-right: -1px;
+  }
+}
+
+.sidebarControl {
+  margin-bottom: 18px;
+}
+
+.sidebarControlTitle {
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 11px;
+  color: $text-dark-color;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.main {
+  padding-top: 30px;
+  border-top: 1px solid $border-color
+}
+
+.mainContent {
+  padding-bottom: 15px;
+  @media (min-width: $sm-width) {
+    border-left: 1px solid $border-color;
+  }
+}
+
+.settingsRow {
+  margin-right: -16px;
+}
+
+.settingsRow > [class*=col-] {
+  @media (min-width: $sm-width) {
+    &:not(:last-child) {
+      border-right: 1px solid $border-color;
+    }
+  }
+}
+
+.riskDescriptionWrapper {
+  background: #f5f5f5;
+  border-radius: 2px;
+  padding: 10px;
+  position: relative;
+}
+
+.riskDescriptionLabel {
+  font-size: 11px;
+}
+
+.riskDescription {
+  font-size: 18px;
+}
+
+.pieChartWrapper {
+  margin-top: 20px;
+}
+
+.tooltip {
+  color: $text-light-color;
+  margin-left: 5px;
+  cursor: pointer;
+}

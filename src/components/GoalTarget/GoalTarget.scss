@@ -1,0 +1,17 @@
+@import '../../styles/variables/colors';
+@import '../../styles/variables/dimensions';
+
+.target {
+	cursor: pointer;
+}
+
+.editIcon {
+	margin-top: -3px;
+	margin-left: 4px;
+	color: $primary_color;
+	opacity: 0.5;
+}
+
+.target:hover .editIcon {
+	opacity: 1;
+}

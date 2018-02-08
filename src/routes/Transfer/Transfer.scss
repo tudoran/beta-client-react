@@ -1,0 +1,94 @@
+@import '../../styles/variables/colors';
+@import '../../styles/variables/dimensions';
+@import '../../styles/mixins';
+
+.pageTitle {
+  color: $primary-darken-color;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.panel {
+  :global .panel-body {
+    padding: 0;
+  }
+}
+
+.pending {
+  margin-bottom: 0;
+  border-radius: 0;
+  border-width: 0 0 1px 0;
+  box-shadow: none;
+
+  :global .panel-body {
+    padding: 0 15px 15px 15px;
+  }
+
+  :global .panel-heading {
+    border: 0;
+  }
+}
+
+.pendingTitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #003100;
+  margin: 0;
+}
+
+.transferRow {
+  padding-top: 10px;
+  &:not(:last-child) {
+    border-bottom: 1px solid $border-color;
+  }
+  @include clearfix();
+}
+
+.colTitle {
+  margin: 5px 0 15px;
+  font-size: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 0 5px;
+}
+
+.hasTooltip {
+  border-bottom: 1px dotted $text-dark-color;
+  cursor: default;
+}
+
+.colBlock {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.formGroup {
+  margin-bottom: 0;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.currencyInput {
+  display: inline-block;
+  width: 152px;
+}
+
+.helpNote {
+  padding-top: 8px;
+  font-size: 13px;
+}
+
+.nextTransactions {
+  font-size: 14px;
+}
+
+.nextTransfer {
+  font-weight: bold;
+  color: $primary-color;
+}
+
+.depositButtonWrapper {
+  vertical-align: text-bottom;
+}

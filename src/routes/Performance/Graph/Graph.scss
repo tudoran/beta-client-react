@@ -1,0 +1,55 @@
+@import '../../../styles/variables/colors';
+
+$axis-color: #e6e6e6;
+
+.graph {
+  :global svg.nvd3-svg {
+    height: 600px;
+    width: 100%;
+    text {
+      fill: $text-color;
+    }
+  }
+
+  :global .nvd3 .nv-axis {
+    path, line {
+      fill: none;
+      stroke: $axis-color;
+      stroke-width: 1px;
+      shape-rendering: crispEdges;
+    }
+  }
+
+  :global .nvd3 .nv-axis.nv-x {
+    path.domain {
+      stroke-width: 10px;
+      stroke-opacity: 1;
+    }
+
+    .tick line {
+      stroke-opacity: 0;
+    }
+  }
+
+  :global .nvd3 .nv-axis.nv-y {
+    stroke-width: 2px;
+    stroke-opacity: 1;
+  }
+
+  :global .nvd3 line.nv-guideline {
+    stroke: $text-dark-color;
+    stroke-width: 2px;
+  }
+
+  :global .nvd3 .nv-brush .extent {
+    fill: $green-color3;
+    fill-opacity: 0.1 !important;
+    shape-rendering: crispEdges;
+  }
+
+  :global .nvd3 .nv-brushBackground rect {
+    stroke: transparent;
+    stroke-width: 0;
+    fill: transparent;
+  }
+}

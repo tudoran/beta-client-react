@@ -1,0 +1,87 @@
+@import '../styles/variables/colors';
+@import '../styles/variables/dimensions';
+@import '../styles/mixins';
+
+.advisor-info {
+	font-size: 16px;
+	line-height: 20px;
+	padding: 15px 0;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.btn-circle {
+	border-radius: 999px;
+	width: 38px;
+	height: 38px;
+	line-height: 33px;
+	padding: 0 !important;
+	color: $text-color;
+	background-color: transparent !important;
+	border-color: $border-color !important;
+	box-shadow: none !important;
+	&:hover {
+		border-color: $primary-color !important;
+		color: $primary-color !important;
+	}
+	&:active, &:focus {
+		border-color: $primary-color !important;
+		color: $primary-color !important;
+	}
+}
+
+.btn-circle + ul {
+	border-color: $border-color !important;
+	background-color: rgba(255, 255, 255, .95) !important;
+	> li {
+		font-size: 16px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		> a {
+			color: $text-color;
+		}
+		&[role=heading] {
+			@media (min-width: $md-width) {
+				display: none !important;
+			}
+		}
+	}
+	&:before {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 8px 8px;
+		border-color: transparent transparent $border-color;
+		position: absolute;
+		top: -8px;
+		right: 10px;
+	}
+	&:after {
+		content: '';
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 8px 8px;
+		border-color: transparent transparent rgba(255, 255, 255, .95);
+		position: absolute;
+		top: -7px;
+		right: 10px;
+	}
+}
+
+.primary-color {
+	color: $primary-color !important;
+}
+
+.icon-circle-wrap {
+	border: 1px solid $border-color;
+	@include border-radius(999px);
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	display: inline-block;
+	box-sizing: content-box;
+	margin-right: 15px;
+}

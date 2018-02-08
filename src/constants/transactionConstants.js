@@ -1,0 +1,12 @@
+const e = 10
+const t = 3e5
+
+export default {
+  MINIMUM: e,
+  MINIMUM_CENTS: e * 100,
+  DEPOSIT_MAXIMUM: t,
+  DEPOSIT_MAXIMUM_CENTS: t * 100,
+  ROLLOVER_MINIMUM: 0.01,
+  ROLLOVER_MAXIMUM: 6e5,
+  WITHDRAW_ALL_THRESHOLD: 0.98
+}

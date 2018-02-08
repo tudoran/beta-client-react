@@ -1,0 +1,189 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+.content {
+  margin-top: 25px;
+}
+.contentRow {
+  margin: 30px 0;
+  width: 100%;
+  display: table;
+}
+.personalInfoContainer {
+  padding: 0 55px;
+  display: table-cell;
+  width: 330px;
+  float: none;
+}
+.financialPictureTitle {
+  margin-bottom: 0;
+}
+.financialPictureDesc {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.question {
+  display: table-cell;
+  vertical-align: middle;
+  float: none;
+  padding-right: 55px;
+  width: auto;
+  h2 {
+    color: $green-color2;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+}
+.bottomActions {
+  margin: 40px 0;
+  text-align: center;
+}
+
+.CGAILabel {
+  color: $primary-color;
+  margin-right: 10px;
+  font-weight: 400;
+}
+.CGAIValue {
+  text-align: right;
+  color: $text-dark-color;
+}
+.bettermentAccounts,
+.externalAccounts {
+  margin-bottom: 25px;
+}
+.listHeader {
+  text-transform: uppercase;
+  color: $green-color2;
+  font-weight: 400;
+  padding: 10px 0 0 0;
+}
+.accountList {
+  border-top: 1px solid $green-color2;
+  font-size: 12px;
+  width: 100%;
+  margin-bottom: 5px;
+  table-layout: fixed;
+  tr {
+    border-bottom: 1px solid $border-color;
+  }
+  th {
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: color .15s;
+    &:hover {
+      color: $green-color2;
+    }
+  }
+  th, td {
+    padding: 4px 5px 3px 0;
+    cursor: default;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+.bettermentAccounts {
+  margin-top: 20px;
+  .accountSummary {
+    width: 55%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .currentBalance {
+    width: 21%;
+    text-align: right;
+  }
+  .annualContribution {
+    width: 24%;
+    text-align: right;
+  }
+}
+.accountCheckbox {
+  margin-bottom: 0;
+  > div {
+    margin: 0;
+  }
+  input[type=checkbox] {
+    margin-top: 2px;
+  }
+  label {
+    min-height: 0;
+    font-weight: 300;
+  }
+}
+.externalAssets {
+  .accountType {
+    width: 20%;
+  }
+  .accountOwner {
+    width: 30%;
+  }
+  .institution {
+    width: 20%;
+  }
+  .currentValue {
+    width: 20%;
+    text-align: right;
+  }
+  .assetActions {
+    width: 10%;
+  }
+  td, th {
+    &:last-child {
+      padding: 0;
+      text-align: right;
+      min-width: 50px;
+    }
+  }
+}
+.externalIncome {
+  .eiName {
+    width: 30%;
+  }
+  .eiStartDate {
+    width: 35%;
+  }
+  .eiAnnualAmount {
+    width: 20%;
+    text-align: right;
+  }
+  .eiActions {
+    width: 10%;
+  }
+  td, th {
+    &:last-child {
+      padding: 0;
+      text-align: right;
+      min-width: 50px;
+    }
+  }
+}
+.btnAssetAction {
+  padding: 0 !important;
+  color: inherit;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  &:hover, &:focus {
+    color: $primary-color;
+  }
+}
+.btnAdd {
+  padding: 0;
+  text-transform: uppercase;
+  color: $green-color2;
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  &:hover, &:focus {
+    color: $primary-color;
+  }
+  span {
+    margin-left: 5px;
+    vertical-align: middle;
+  }
+}

@@ -1,0 +1,46 @@
+// Basic Color
+$green-color1:  #45a018;
+$green-color2:  #A3C745;
+$green-color3:  #8EA86C;
+$green-color4:  #4D642D;
+$green-color5:  #006400;
+
+$blue-color1:    #1d5a96;
+
+$primary-color: $green-color1;
+$primary-lighten-color: $green-color3;
+$primary-darken-color: $green-color4;
+
+$danger-color:      #E05923;
+
+$text-color:        #686868;
+$text-dark-color:   #333;
+$text-light-color:  #bbb;
+
+$bg-color1:         #fff;
+$bg-color2:         #f5f5f5;
+$bg-color3:         #EDEFEF;
+
+// Header
+$header-bg-color:   #333;
+
+// Footer
+$footer-bg-color:   #333;
+
+$border-color:      #ddd;
+$border-dark-color: #bbb;
+
+$shadow-color:       #bbb;
+$table-border-color: #bbb;
+
+// Form Fields
+$input-color:        #333;
+
+$btn-primary-color:			  $green-color5;
+$btn-primary-hover-color:	$green-color1;
+$btn-disabled-color:		  #f5f5f5;
+$btn-disabled-text-color:	#bbb;
+$btn-danger-color:        #d9534f;
+
+$modal-title-color:  $green-color2;
+$modal-border-color: #bbb;

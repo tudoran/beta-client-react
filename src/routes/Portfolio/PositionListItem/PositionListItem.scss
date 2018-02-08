@@ -1,0 +1,160 @@
+@import '../styles/variables/fonts';
+@import '../styles/variables/colors';
+
+.header {
+  cursor: pointer;
+
+  a:hover {
+    color: inherit;
+  }
+}
+
+.position-list-item {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding-top: 2px;
+
+  &:hover {
+    .header {
+      font-weight: $hover-font-weight;
+    }
+
+    .chevron-right {
+      display: inline-block !important;
+    }
+  }
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  &:last-child {
+    &.position-list-item--opened {
+      margin-bottom: 25px;
+    }
+  }
+
+  :global {
+    .panel-heading {
+      background-color: transparent;
+      border: none;
+      padding: 0;
+    }
+
+    .panel-title {
+      padding: 10px 0 1px;
+    }
+
+    .panel-body {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.position-list-item--opened {
+  padding-top: 3px;
+  margin-top: -1px;
+  border-bottom: 1px solid #bbb;
+  border-top: 1px solid #bbb;
+
+  .header {
+    font-weight: $hover-font-weight;
+  }
+}
+
+.hiddenPart {
+  border: none;
+
+  .panel-body {
+    padding: 0;
+  }
+}
+
+.visiblePart {
+  padding: 11px 0 6px;
+}
+
+.visiblePart.opened {
+  font-weight: 500;
+}
+
+.chevron-down {
+  display: none;
+  margin-right: 7px;
+}
+
+.chevron-right {
+  display: none !important;
+  margin-right: 7px;
+}
+
+.cell {
+  font-size: 14px;
+}
+
+.targetValue {
+  float: right;
+  text-align: right;
+}
+
+.currentValue {
+  margin-top: 3px;
+  font-size: 11px;
+}
+
+.chevron-up {
+
+}
+
+.chevron-up-wrapper {
+  margin: 0 auto;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+  text-align: center;
+  line-height: 14px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  bottom: -9px;
+  background-color: white;
+
+  &:hover {
+    color: $btn-primary-hover-color;
+    border-color: $btn-primary-hover-color;
+  }
+}
+
+.file-icon {
+  display: none !important;
+  margin-right: 4px;
+}
+
+.file-name {
+  color: $text-dark-color;
+
+  &:hover {
+    color: $btn-primary-hover-color;
+    margin-left: -14px;
+
+    .file-icon {
+      display: inline-block !important;
+    }
+  }
+}
+
+.value-content-inner {
+  float: right;
+  margin-right: -15px;
+}
+
+.tooltipPercent {
+  font-weight: 500;
+}
+
+.tooltipTitle {
+  font-weight: 300;
+}

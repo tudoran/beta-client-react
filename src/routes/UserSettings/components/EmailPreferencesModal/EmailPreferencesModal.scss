@@ -1,0 +1,46 @@
+@import 'variables/colors';
+
+.emailPreferencesModal {
+  max-width: 600px;
+}
+.headline {
+  line-height: 20px;
+  font-size: 14px;
+  padding: 0 0 10px;
+  margin: 0 0 15px;
+  color: $text-dark-color;
+}
+.listHeading {
+  font-size: 18px;
+  font-weight: 500;
+  color: $text-dark-color;
+  letter-spacing: -.3px;
+  margin: 10px 0;
+}
+.listHeadingIcon {
+  color: $btn-primary-color;
+  margin-right: 10px;
+}
+.listNote {
+  margin: 0 0 10px 38px;
+  font-size: 12px;
+  font-weight: 300;
+}
+.listSection {
+  margin: 0 0 10px 38px;
+  padding: 0 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.listItem {
+  margin-bottom: 0;
+}
+.listItemCheckbox {
+  padding-top: 0 !important;
+  > label {
+    font-size: 16px;
+    font-weight: 300 !important;
+    color: $text-dark-color;
+  }
+}

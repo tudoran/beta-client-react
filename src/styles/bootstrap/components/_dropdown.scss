@@ -1,0 +1,17 @@
+.dropdown {
+
+}
+
+.dropdown-toggle {
+
+}
+
+.dropdown-menu {
+  > .active {
+    > a,
+    > a:focus,
+    > a:hover {
+      background-color: $green-color1;
+    }
+  }
+}

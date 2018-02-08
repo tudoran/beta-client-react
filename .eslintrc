@@ -1,0 +1,53 @@
+{
+  "parser"  : "babel-eslint",
+  "extends" : [
+    "standard",
+    "standard-react",
+    "eslint:recommended"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "promise",
+    "import"
+  ],
+  "env"     : {
+    "browser" : true
+  },
+  "globals" : {
+    "__DEV__"      : false,
+    "__PROD__"     : false,
+    "__DEBUG__"    : false,
+    "__COVERAGE__" : false,
+    "__BASENAME__" : false,
+    "API_URL": false,
+    "SESSION_THRESHOLD_TIME": false,
+    "INTERACTION_THROTTLE_TIME": false,
+    "LOCALSTORAGE_ROOT": false,
+    "GIT": false
+  },
+  "rules": {
+    "semi" : [2, "never"],
+    "max-len": [2, 120, 2],
+    "generator-star-spacing": 0,
+    "babel/generator-star-spacing": 1,
+    "jsx-quotes": [2, "prefer-single"],
+    "import/no-unresolved": 2,
+    "import/named": 2,
+    "import/default": 2,
+    "import/export": 2,
+    "import/namespace": 2,
+    "import/no-deprecated": 1,
+    "import/imports-first": 2,
+    "import/no-duplicates": 2,
+    "import/prefer-default-export": 2,
+    "no-var": "error"
+  },
+  "settings": {
+    "import/parser": "babel-eslint",
+    "import/resolve": {
+      "moduleDirectory": ["node_modules", "src"]
+    },
+    "import/extensions": ['.js', '.jsx']
+  }
+}

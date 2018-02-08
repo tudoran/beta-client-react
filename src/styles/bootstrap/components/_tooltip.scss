@@ -1,0 +1,49 @@
+.tooltip {
+  font-family: $font-name;
+  font-weight: 300;
+  p:last-child {
+    margin-bottom: 0;
+  }
+  &.in {
+    opacity: 1;
+  }
+  &.top .tooltip-arrow {
+    border-top-color: white;
+  }
+  &.right .tooltip-arrow {
+    border-right-color: white;
+  }
+  &.bottom .tooltip-arrow {
+    border-bottom-color: white;
+  }
+  &.left .tooltip-arrow {
+    border-left-color: white;
+  }
+}
+.tooltip-inner {
+  color: $primary-darken-color;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,.15);
+  max-width: 280px;
+}
+.tooltip-primary {
+  font-weight: 500;
+  &.top .tooltip-arrow {
+    border-top-color: rgba($btn-primary-color, 0.9);
+  }
+  &.right .tooltip-arrow {
+    border-right-color: rgba($btn-primary-color, 0.9);
+  }
+  &.bottom .tooltip-arrow {
+    border-bottom-color: rgba($btn-primary-color, 0.9);
+  }
+  &.left .tooltip-arrow {
+    border-left-color: rgba($btn-primary-color, 0.9);
+  }
+  .tooltip-inner {
+    color: white;
+    background-color: rgba($btn-primary-color, 0.9);
+    box-shadow: 0 0 15px rgba(0,0,0,.15);
+    max-width: 280px;
+  }
+}

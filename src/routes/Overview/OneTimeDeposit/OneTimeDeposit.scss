@@ -1,0 +1,21 @@
+@import '../../../styles/variables/colors';
+
+.deposit {
+  &-form {
+    padding: 15px 25px;
+  }
+  &-group {
+    margin-bottom: 5px;
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+  &-label {
+    color: $text-color;
+    margin-bottom: 0;
+  }
+  &-input {
+    width: 190px;
+    position: relative;
+  }
+}

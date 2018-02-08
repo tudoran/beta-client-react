@@ -1,0 +1,31 @@
+@import '../../../styles/variables/colors';
+
+.panel {
+	&:hover .dragButton {
+		display: block;
+	}
+}
+
+.actionLeft {
+	float: left;
+	width: 25px;
+}
+
+.actionRight {
+	float: right;
+	text-align: right;
+	width: 40px;
+}
+
+.panelInner {
+	margin-left: 25px;
+	margin-right: 40px;
+}
+
+.dragButton {
+	display: none;
+	padding-left: 2px;
+	padding-right: 2px;
+	color: $text-color;
+	cursor: grab;
+}

@@ -1,0 +1,56 @@
+@import '../../styles/variables/colors';
+@import '../../styles/variables/dimensions';
+
+.page-title {
+  color: $primary-darken-color;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.selectorWrapper {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.sidebar {
+  @media (min-width: $sm-width) {
+    margin-right: -1px;
+    padding-right: 0;
+  }
+}
+
+.graph {
+  margin-top: 10px;
+  /*margin-top: 50px;
+  @media (min-width: $sm-width) {
+    border-left: 1px solid $border-color;
+  }*/
+}
+
+.graphInner {
+  // padding: 15px 35px 15px 10px;
+  padding: 15px;
+}
+
+.aboutToggle {
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+.aboutContent {
+  padding: 15px;
+  font-size: 14px;
+  line-height: 1.6em;
+  border: 1px solid #e6e6e6;
+  margin: 10px auto 20px;
+}
+
+.item {
+  padding: 14px 15px 14px 32px;
+}
+
+.select {
+  padding-bottom: 15px;
+  text-align: center;
+}

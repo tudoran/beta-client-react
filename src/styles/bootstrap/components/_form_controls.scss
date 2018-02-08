@@ -1,0 +1,22 @@
+.form-control {
+	box-shadow: none;
+	font-size: 15px;
+	color: $input-color;
+	&:focus {
+		box-shadow: none;
+		border-color: $primary-darken-color;
+		outline: none;
+	}
+}
+
+.form-control-static {
+	font-weight: 300;
+	font-size: 15px;
+}
+
+.control-label {
+	color: $primary-darken-color;
+	text-align: left !important;
+	font-weight: 300;
+	font-size: 15px;
+}

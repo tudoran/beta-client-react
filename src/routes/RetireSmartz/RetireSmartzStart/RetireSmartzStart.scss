@@ -1,0 +1,144 @@
+@import '../../../styles/variables/colors';
+@import '../../../styles/variables/dimensions';
+@import '../../../styles/mixins';
+
+.sectionHeader {
+  text-align: center;
+  margin: 40px 0 30px;
+}
+.pageTitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: $green-color2;
+  letter-spacing: -.3px;
+  margin-bottom: 15px;
+}
+.bubble {
+  @include border-radius(50%);
+  max-width: 320px;
+  border: 2px solid $border-color;
+  margin: 0 auto;
+  overflow: hidden;
+  cursor: default;
+}
+.bubbleInner {
+  width: 100%;
+  padding-top: 100%;
+  text-align: center;
+  position: relative;
+  &:before {
+    opacity: .8;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $green-color2;
+  }
+  &:hover {
+    .bubbleTop {
+      margin-top: -77%;
+    }
+    .calculatedLabel {
+      height: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      opacity: 0;
+    }
+    .bubbleBottom {
+      height: 100%;
+      top: 0;
+    }
+    .downArrow {
+      transform: rotate(-180deg);
+    }
+    .bubbleBtmCopy {
+      opacity: 1;
+      padding: 15px 45px;
+      height: auto;
+    }
+  }
+}
+.bubbleTop {
+  height: 57%;
+  position: absolute;
+  top: 0;
+  color: white;
+  width: 100%;
+  @include transition(all .3s ease-in-out);
+}
+.bubbleBottom {
+  height: 43%;
+  z-index: 1;
+  text-align: center;
+  background-color: $blue-color1;
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 57%;
+  @include transition(all .3s ease-in-out);
+}
+.bubbleTopContent {
+  @include vcenter();
+  width: 100%;
+  left: 0;
+  padding-top: 20px;
+}
+.bubbleBtmContent {
+  width: 100%;
+  left: 0;
+  @include vcenter();
+}
+.bubbleBtmCopy {
+  @include transition(opacity .3s linear);
+  opacity: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: white;
+  height: 0;
+  padding: 0 45px;
+}
+.savingsLabel {
+  text-transform: uppercase;
+  font-size: 15px;
+  margin: 15px 0;
+  line-height: 1;
+}
+.savingsAmount {
+  margin: 8px 0;
+  line-height: 1;
+  font-size: 32px;
+}
+.calculatedLabel {
+  font-size: 15px;
+  line-height: 1.3;
+  padding: 0 20px 10px;
+  @include transition(all .3s ease-in-out);
+}
+.downArrow {
+  @include transition(all .3s ease-in-out);
+}
+.questionRegion {
+  @media (max-width: sm-width - 1) {
+    margin-top: 45px;
+  }
+}
+.qaItem {
+  padding-right: 5%;
+  margin-top: 30px;
+}
+.qaIcon {
+  float: left;
+  color: $green-color2;
+}
+.qa {
+  margin-left: 45px;
+  h3 {
+    font-weight: 300;
+    color: $green-color2;
+  }
+}
+.bottomActions {
+  margin: 40px 0;
+}

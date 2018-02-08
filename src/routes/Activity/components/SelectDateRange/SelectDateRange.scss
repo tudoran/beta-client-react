@@ -1,0 +1,36 @@
+@import '../../../../styles/mixins';
+@import '../../../../styles/variables/colors';
+@import '../../../../styles/variables/dimensions';
+
+.selectDateRange {
+  list-style: none;
+  display: block;
+  font-size: 13px;
+  width: 100%;
+  border: 1px solid $border-color;
+  padding: 2px;
+  position: relative;
+  @include border-radius(4px);
+  @media (max-width: $sm-width) {
+    margin-top: 15px;
+  }
+  @include clearfix();
+}
+
+.item {
+  cursor: pointer;
+  float: left;
+  padding: 7px 0px;
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  width: 33.3333%;
+  white-space: nowrap;
+}
+
+.activeItem {
+  background: $primary-lighten-color;
+  color: white;
+  @include border-radius(4px);
+}
